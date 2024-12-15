@@ -1,0 +1,21 @@
+{
+  "name": "my-egress-ip",
+  "version": "1.0.0",
+  "description": "Fetches and prints the egress IP using multiple remote services.",
+  "main": "my_egress_ip.ts",
+  "scripts": {
+    "build": "bun build ./my_egress_ip.ts --outfile=./dist/my_egress_ip.js --target=bun",
+    "start": "bun ./dist/my_egress_ip.js",
+    "dev": "bun run my_egress_ip.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "fastify": "^5.2.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "my_egress_ip.ts",
+  "type": "module"
+}
